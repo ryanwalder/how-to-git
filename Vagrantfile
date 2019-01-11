@@ -5,7 +5,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "xenial64"
-  config.vm.hostname = "myxenial.box"
+  config.vm.hostname = "cs-vagrant-test-xenial-01.gel.zone"
   config.vm.network :private_network, ip: "192.168.0.42"
 
   config.vm.provider :virtualbox do |vb|
