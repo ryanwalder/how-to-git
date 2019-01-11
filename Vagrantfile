@@ -4,8 +4,8 @@
 # "code" we're using for the examples in the repo.
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "precise32"
-  config.vm.hostname = "myprecise.box"
+  config.vm.box = "xenial64"
+  config.vm.hostname = "myxenial.box"
   config.vm.network :private_network, ip: "192.168.0.42"
 
   config.vm.provider :virtualbox do |vb|
