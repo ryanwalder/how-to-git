@@ -1,11 +1,7 @@
 # Example Vagrantfile
 #
-# Single box with VirtualBox provider.
-#
-# NOTE: Make sure you have the precise32 base box installed...
-# vagrant box add precise32 http://files.vagrantup.com/precise32.box
-#
-# VirtualBox modifyvm docs: http://www.virtualbox.org/manual/ch08.html#vboxmanage-modifyvm
+# NOTE: This Vagrantfile isn't actually meant to do anything, it's just the
+# "code" we're using for the examples in the repo.
 
 Vagrant.configure("2") do |config|
   config.vm.box = "precise32"
