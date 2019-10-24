@@ -1,6 +1,6 @@
 # how-to-git
 
-A repoo with some branches and some pull requests designed to show how to:
+A repo with some branches and some pull requests designed to show how to:
 
 * Make good commits
     * Not too much sausage (squash commits)
@@ -23,4 +23,4 @@ We don't need to see how the sausage is made. A good commit should be the code n
 
 ### Making pull requests
 
-Much like the Good commits section above good Pull Requests make everyone's lives easier.
+Much like the Good commits section above (ben woz ere) good Pull Requests make everyone's lives easier.
