@@ -1,10 +1,10 @@
 # how-to-git
 
-A repoo with some branches and some pull requests designed to show how to:
+A repo with some branches and some pull requests designed to show how to:
 
 * Make good commits
     * Not too much sausage (squash commits)
-    * Not too little sausage (splitt commits)
+    * Not too little sausage (split commits)
 * Make good Pull Requests
 * Review Pull Requests like a boss
 * Use the Fetch & Rebase method of working (rather than pull)
