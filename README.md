@@ -3,8 +3,8 @@
 A repoo with some branches and some pull requests designed to show how to:
 
 * Make good commits
-    * Not too much sausage (squash commits)
-    * Not too little sausage (splitt commits)
+  * Not too much sausage (squash commits)
+  * Not too little sausage (splitt commits)
 * Make good Pull Requests
 * Review Pull Requests like a boss
 * Use the Fetch & Rebase method of working (rather than pull)
@@ -38,8 +38,8 @@ By default merge will try and [fast-forward](https://sandofsky.com/images/fast_f
 With this setting it means it'll throw an error rather create the merge commit which give you the chance to fix the thing causing the merge commit before it happens, keeping you log nice and clean.
 
 
-```
-$ git config --global merge.ff only
+```bash
+git config --global merge.ff only
 ```
 
 ## Git aliases
@@ -50,20 +50,20 @@ Run the below commands to add the aliases to your global config, once entered yo
 
 EG:
 
-```
-$ git config --global alias.st status
+```bash
+git config --global alias.st status
 ```
 
 And `git status` becomes `git st`
 
 ### Shorthand
 
-```
-$ git config --global alias.f fetch --all
-$ git config --global alias.co checkout
-$ git config --global alias.br branch
-$ git config --global alias.st status
-$ git config --global alias.cp cherry-pick
+```bash
+git config --global alias.f fetch --all
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.st status
+git config --global alias.cp cherry-pick
 ```
 
 ### Time Savers
@@ -72,8 +72,8 @@ $ git config --global alias.cp cherry-pick
 
 Sometime you just want to get rid of the last commit but keep the changed files.
 
-```
-$ git config --global alias.uncommit 'reset HEAD~'
+```bash
+git config --global alias.uncommit 'reset HEAD~'
 ```
 
 #### Unadd
@@ -82,20 +82,20 @@ Accidentally added a file to the staging area which you didn't mean to?
 
 Use `git unadd filename` to remove a single file or `git unadd` to unadd everything.
 
-```
-$ git config --global alias.unadd 'reset HEAD'
+```bash
+git config --global alias.unadd 'reset HEAD'
 ```
 
 #### Fancy log
 
-```
-$ git config --global alias.lg 'log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit'
+```bash
+git config --global alias.lg 'log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit'
 ```
 
 #### Log with GPG signatures
 
 Using GPG signed commit? (You should be!) And want to check the signatures on commits?
 
-```
-$ git config --global alias.pulls 'pull --show-signatures'
+```bash
+git config --global alias.pulls 'pull --show-signatures'
 ```
