@@ -11,15 +11,15 @@ A repoo with some branches and some pull requests designed to show how to:
 
 ## Notes
 
-Obviously some of this is very opinionated. I am working to the following principles when making this guide:
+Obviously some of this is very opinionated. I was working with the following principles when making this guide:
 
 ### Good commit messages
 
 [This post](https://chris.beams.io/posts/git-commit/) by [Chris Beams](https://github.com/cbeams) delves deep into what makes a good commit message and why.
 
-### Good commits
+### Gist of Good commits messages section above
 
-We don't need to see how the sausage is made. A good commit should be the code needed for a single logical change. Nothing more, nothing less.
+We don't need to see how the sausage is made. A good commit should describe the code needed for a single logical change. Nothing more, nothing less.
 
 ### Making pull requests
 
@@ -27,7 +27,7 @@ Much like the Good commits section above good Pull Requests make everyone's live
 
 ## Handy git settings
 
-These are setting which improve over the base setup
+These settings do improve overall feeling of the base setup.
 
 ### Always fast forward merge
 
@@ -46,9 +46,8 @@ $ git config --global merge.ff only
 
 Tired of typing so much? Make aliases!
 
-Run the below commands to add the aliases to your global config, once entered you can then use the word after the `alias.` as if it were a git command itself
-
-EG:
+Run the below commands to add the aliases to your global config, once entered you can start using them via `alias_name` were `alias_name` is the part after the `.` in `alias.test`
+e.g.
 
 ```
 $ git config --global alias.st status
@@ -56,7 +55,7 @@ $ git config --global alias.st status
 
 And `git status` becomes `git st`
 
-### Shorthand
+### Some useful aliases
 
 ```
 $ git config --global alias.f fetch --all
@@ -74,6 +73,12 @@ Sometime you just want to get rid of the last commit but keep the changed files.
 
 ```
 $ git config --global alias.uncommit 'reset HEAD~'
+```
+
+or
+
+```
+$ git config --global alias.uncommit 'reset HEAD^'
 ```
 
 #### Unadd
