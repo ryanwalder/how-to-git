@@ -42,6 +42,15 @@ With this setting it means it'll throw an error rather create the merge commit w
 $ git config --global merge.ff only
 ```
 
+### Set pull method to rebase
+
+Add following section to ~/.gitconfig
+
+```
+[pull]
+        rebase = true
+```
+
 ## Git aliases
 
 Tired of typing so much? Make aliases!
