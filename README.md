@@ -9,6 +9,8 @@ A repoo with some branches and some pull requests designed to show how to:
 * Review Pull Requests like a boss
 * Use the Fetch & Rebase method of working (rather than pull)
 
+Designed to be used in conjunction with my [How to git](https://docs.google.com/presentation/d/1_990RTb0fWJnp_0Z6sSUvCOn_dR2k2Ko5QEju753en4/edit?usp=sharing) slides.
+
 ## Notes
 
 Obviously some of this is very opinionated. I am working to the following principles when making this guide:
@@ -40,62 +42,4 @@ With this setting it means it'll throw an error rather create the merge commit w
 
 ```
 $ git config --global merge.ff only
-```
-
-## Git aliases
-
-Tired of typing so much? Make aliases!
-
-Run the below commands to add the aliases to your global config, once entered you can then use the word after the `alias.` as if it were a git command itself
-
-EG:
-
-```
-$ git config --global alias.st status
-```
-
-And `git status` becomes `git st`
-
-### Shorthand
-
-```
-$ git config --global alias.f fetch --all
-$ git config --global alias.co checkout
-$ git config --global alias.br branch
-$ git config --global alias.st status
-$ git config --global alias.cp cherry-pick
-```
-
-### Time Savers
-
-#### Uncommit
-
-Sometime you just want to get rid of the last commit but keep the changed files.
-
-```
-$ git config --global alias.uncommit 'reset HEAD~'
-```
-
-#### Unadd
-
-Accidentally added a file to the staging area which you didn't mean to?
-
-Use `git unadd filename` to remove a single file or `git unadd` to unadd everything.
-
-```
-$ git config --global alias.unadd 'reset HEAD'
-```
-
-#### Fancy log
-
-```
-$ git config --global alias.lg 'log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit'
-```
-
-#### Log with GPG signatures
-
-Using GPG signed commit? (You should be!) And want to check the signatures on commits?
-
-```
-$ git config --global alias.pulls 'pull --show-signatures'
 ```
